@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(180deg,#32012F, #cac3c6);
+    display: flex;
+    justify-content: center;
+    
+
+
+}
+
+.to-doapp{
+    /* width: 100%; */
+    width: 600px;
+    background: #fff;
+    height: fit-content;
+    border-radius: 25px;
+    padding: 30px 50px 30px;
+    margin: 120px auto 20px;
+}
+
+.to-doapp h2{
+    color: #250f1a;
+    font-family: "Alice", serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.to-doapp  img{
+    width: 30px;
+    margin-left: 10px;
+}
+
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+form input {
+    width: 350px;
+    height: 50px;
+    border-radius: 30px;
+    border: none;
+    background: #37373721;
+    padding: 20px;
+}
+
+form button{
+    height: 50px;
+    border-radius: 30px;
+    width: 100px;
+    outline: none;
+    border: none;
+    background-color: rgba(177, 65, 162, 0.432);
+    padding-inline: 30px;
+    cursor: pointer;
+    font-size: 16px;
+
+}
+
+form button:hover  {
+    background-color: #128f07;
+    filter: drop-shadow(0 0 10px black);
+    
+
+}
+ul{
+    margin-top: 24px;
+}
+
+ul li {
+    list-style-type: none;
+    padding-block: 8px;
+    /* padding-inline: 10px; */
+    font-size: 16px;
+    cursor: pointer;
+    /* position: relative; */
+}
+
+
+/* .icon {
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+} */
+
+ul li{
+    background-image: url(./unchecked.jfif);
+    background-repeat: no-repeat;
+    background-size: 32px;
+    padding-left: 40px;
+    margin-bottom: 10px;
+    background-position: left center;
+    /* background-color: rgba(177, 65, 162, 0.432); */
+}
+
+ul li.checked{
+    text-decoration: line-through;
+    
+}
+
+ul li.checked{
+    background-image: url(./purple-check-mark-icon-on-transparent-background-free-png.webp);
+
+}
+
+ul li.completed {
+    text-decoration: line-through;
+}
+
+
