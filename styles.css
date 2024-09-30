@@ -16,7 +16,7 @@
 
 }
 
-.to-doapp{
+.to-doapp {
     /* width: 100%; */
     width: 600px;
     background: #fff;
@@ -39,38 +39,49 @@
 }
 
 
-.row{
+.form{
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-top: 10px;
 }
 
-form input {
-    width: 350px;
+#input-box {
+    width: 380px;
     height: 50px;
     border-radius: 30px;
     border: none;
+    outline: none;
     background: #37373721;
     padding: 20px;
+    padding-right: 100px;
+
 }
 
-form button{
+
+
+button{
     height: 50px;
-    border-radius: 30px;
-    width: 100px;
+    width: 80px;
     outline: none;
+    border-radius: 25px;
     border: none;
     background-color: rgba(177, 65, 162, 0.432);
-    padding-inline: 30px;
+    padding-inline: 20px;
     cursor: pointer;
     font-size: 16px;
+    text-align: center;
+    margin-left: -80px;
+    
+    
 
 }
 
-form button:hover  {
+button:hover  {
     background-color: #128f07;
     filter: drop-shadow(0 0 10px black);
+    color: #fff;
+
     
 
 }
@@ -81,10 +92,19 @@ ul{
 ul li {
     list-style-type: none;
     padding-block: 8px;
-    /* padding-inline: 10px; */
     font-size: 16px;
     cursor: pointer;
+    border: 2px solid purple;
+    border-radius: 20px;
+    font-weight: 600;
+    
     /* position: relative; */
+}
+
+#due-date {
+    background-color: #37373721;
+    margin-left: 20px;
+    
 }
 
 
@@ -94,8 +114,8 @@ ul li {
     margin-right: 10px;
 } */
 
-ul li{
-    background-image: url(./unchecked.jfif);
+ul li {
+    background-image: url(./images/unchecked.jfif);
     background-repeat: no-repeat;
     background-size: 32px;
     padding-left: 40px;
@@ -104,7 +124,7 @@ ul li{
     /* background-color: rgba(177, 65, 162, 0.432); */
 }
 
-ul li.checked{
+#checked{
     text-decoration: line-through;
     
 }
@@ -116,6 +136,21 @@ ul li.checked{
 
 ul li.completed {
     text-decoration: line-through;
+    color: rgb(80, 2, 63);
 }
+
+.bx bxs-trash-alt {
+    text-align: end;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.task-text {
+    margin-right: 90px;
+}
+
 
 
